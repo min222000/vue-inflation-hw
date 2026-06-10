@@ -3,8 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  // 🌟 加上這行！這必須跟你在 GitHub 的專案名稱一模一樣
-  base: '/vue-inflation-hw/', 
+  base: '/vue-inflation-hw/', // 👈 確保前後都有斜線，且名字跟 GitHub Repo 完全一樣
   server: {
     proxy: {
       '/api': {
